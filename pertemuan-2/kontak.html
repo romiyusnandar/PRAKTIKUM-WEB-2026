@@ -3,58 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Halaman Kontak Saya</title>
+    <title>Kontak saya</title>
 </head>
 <body>
     <header>
-        <h1>Kontak Saya</h1>
+        <h2>Formulir Kontak</h2>
     </header>
+
     <hr>
 
-        <main>
-            <section>
+    <main>
+        <section>
+            <h2>Kirim pesan atau penawaran Anda:</h2>
 
-                <h2>Kirimkan Penawaran Anda:</h2>
-
+            <form action="">
                 <p>
-                    <form action="">
-                        <label for="nama_pengirim">Nama</label>
-                        <input type="text" name="Nama" id="nama_pengirim">
-                    </form>
+                    <label for="nama">Nama</label>
+                    <input type="text" id="nama">
                 </p>
 
                 <p>
-                    <form action="">
-                        <label for="email_pengirim">Email</label>
-                        <input type="email" name="Email" id="email_pengirim">
-                    </form>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
                 </p>
 
                 <p>
-                    <label for="jenis_layanan">Layanan ynag Dibutuhkan</label>
+                    <label for="jenis_layanan">Jenis Layanan</label>
                     <select name="jenis_layanan" id="jenis_layanan">
-                        <option value="">--Pilih Layanan</option>
-                        <option value="web">Pembuatan Web</option>
-                        <option value="Aplikasi">Pembuatan Aplikasi</option>
-                        <option value="lainnya">Lain-lain</option>
+                        <option value="">--Pilih Layanan--</option>
+                        <option value="web">Pembuatan web</option>
+                        <option value="aplikasi">Pembuatan aplikasi</option>
+                        <option value="lainya">Lain-lain</option>
                     </select>
                 </p>
+            </form>
 
-                <p>
-                    <label for="pesan">Pesan</label>
-                    <textarea name="Pesan" id="pesan" rows="6"></textarea>
-                </p>
+            <p>
+                <textarea name="pesan" id="pesan" cols="50" rows="6"></textarea>
+            </p>
 
-                <button type="submit">Kirim Pesan</button>
-                <button type="reset">Batal / Reset</button>
+            <button type="submit">Kirim</button>
+            <button type="reset">Reset / Batal</button>
+        </section>
+    </main>
 
-            </section>
-        </main>
+    <hr>
 
-        <hr>
-
-        <footer>
-            <p>&copy; Teknik Informatika 2026</p>
-        </footer>
+    <footer>
+        &copy; Teknik Informatika 2026
+    </footer>
 </body>
 </html>
